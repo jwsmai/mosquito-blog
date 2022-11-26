@@ -32,9 +32,7 @@ GET           /blog/resume                          controllers.HomeController.t
 
 #blog util
 
-GET           /
-
-                          controllers.HomeController.toUpload
+GET           /                                     controllers.HomeController.toUpload
 GET           /blog/resource/*file                  controllers.ResourceController.at(path="/",file)
 GET           /blog/captcha                         controllers.CaptchaController.getCaptcha(w:Int ?= 90 , h :Int ?= 36)
 
